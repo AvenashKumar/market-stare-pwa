@@ -1,0 +1,2 @@
+1. Show news at the start (when search results are not there)
+3. Add meta tags

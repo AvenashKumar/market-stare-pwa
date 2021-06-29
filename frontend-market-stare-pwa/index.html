@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+    <link rel="shortcut icon" href="assets/images/imageedit-9-6229227799-77x77.png" type="image/x-icon">
+    <meta name="description" content="">
+
+
+    <title>Market Stare</title>
+    <link rel="stylesheet" href="assets/tether/tether.min.css">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-reboot.min.css">
+    <link rel="stylesheet" href="assets/facebook-plugin/style.css">
+    <link rel="stylesheet" href="assets/dropdown/css/style.css">
+    <link rel="stylesheet" href="assets/socicon/css/styles.css">
+    <link rel="stylesheet" href="assets/theme/css/style.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="preload"
+        href="https://fonts.googleapis.com/css?family=Jost:100,200,300,400,500,600,700,800,900,100i,200i,300i,400i,500i,600i,700i,800i,900i&display=swap"
+        as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+        <link rel="stylesheet"
+            href="https://fonts.googleapis.com/css?family=Jost:100,200,300,400,500,600,700,800,900,100i,200i,300i,400i,500i,600i,700i,800i,900i&display=swap">
+    </noscript>
+    <link rel="preload" as="style" href="assets/mobirise/css/mbr-additional.css">
+    <link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
+
+</head>
+
+<body onload="onPageLoad()">
+
+    <section class="menu menu2 cid-sz7JY9VyGW" once="menu" id="menu2-o">
+
+        <nav class="navbar navbar-dropdown navbar-fixed-top navbar-expand-lg">
+            <div class="container">
+                <div class="navbar-brand">
+                    <span class="navbar-logo">
+                        <a href=".">
+                            <img src="assets/images/imageedit-9-6229227799-77x77.png" alt="code of everything"
+                                style="height: 3rem;">
+                        </a>
+                    </span>
+                    <span class="navbar-caption-wrap"><a class="navbar-caption text-black display-7" href=".">Market
+                            Stare</a></span>
+                </div>
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <div class="hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <!--ul class="navbar-nav nav-dropdown nav-right" data-app-modern-menu="true">
+                        <li class="nav-item"><a class="nav-link link text-black display-4" href=".">
+                                Market Stare</a></li>
+                    </ul-->
+
+
+                </div>
+            </div>
+        </nav>
+    </section>
+
+    <section class="form6 cid-sz7JYaAW9C" id="form6-p">
+
+
+        <div class="container-fluid">
+            <div class="mbr-section-head">
+                <h3 class="mbr-section-title mbr-fonts-style align-center mb-0 display-2">
+                    <strong>Market Stare</strong>
+                </h3>
+
+            </div>
+            <div class="row justify-content-center mt-4">
+                <div class="col-lg-8 mx-auto mbr-form">
+                    <form method="GET" class="mbr-form form-with-styler mx-auto" action="/search">
+
+                        <div class="row">
+                            <div hidden="hidden" class="alert alert-danger col-12">Oops...!
+                                some
+                                problem!</div>
+                        </div>
+                        <div class="dragArea row">
+                            <div class="col-lg-12 col-md-12 col-sm-12 form-group">
+                                <input type="text" name="ticker" placeholder="Find a Symbol (IBM)" class="form-control"
+                                    value="" id="search-ticker">
+                            </div>
+
+
+                            <div class="col-auto mbr-section-btn align-center"><button type="submit"
+                                    class="btn btn-primary display-4">Search<br></button></div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div id="search-results" hidden="hidden">
+        <section class="tabs content18 cid-sAsnBySvSt" id="tabs1-w">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-12 col-md-12">
+                        <h3 class="mbr-section-title mbr-fonts-style align-center mb-4 display-5">
+                            <strong id="data-symbol">Tabs</strong>
+                        </h3>
+                        <h4 class="mbr-section-subtitle mb-0 mt-2 mbr-fonts-style display-5" id="data-name">
+                            Tabs Subtitle
+                        </h4>
+                        <h4 class="mbr-section-subtitle mbr-fonts-style align-center mb-4 display-5"
+                            id="data-marketprice">
+                        </h4>
+                    </div>
+                </div>
+                <div class="row justify-content-center mt-4">
+                    <div class="col-12 col-md-12">
+                        <ul class="nav nav-tabs mb-4" role="tablist">
+                            <li class="nav-item first mbr-fonts-style"><a
+                                    class="nav-link mbr-fonts-style show active display-7" role="tab" data-toggle="tab"
+                                    href="#tabs1-w_tab0" aria-selected="true"><strong>Finance</strong></a></li>
+                            <li class="nav-item"><a class="nav-link mbr-fonts-style active display-7" role="tab"
+                                    data-toggle="tab" href="#tabs1-w_tab1" aria-selected="true"
+                                    tab-purpose="news"><strong>News</strong></a>
+                            </li>
+                            <li class="nav-item"><a class="nav-link mbr-fonts-style active display-7" role="tab"
+                                    data-toggle="tab" href="#tabs1-w_tab2"
+                                    aria-selected="true"><strong>Social</strong></a>
+                            </li>
+                            <li class="nav-item"><a class="nav-link mbr-fonts-style active display-7" role="tab"
+                                    data-toggle="tab" href="#tabs1-w_tab3"
+                                    aria-selected="true"><strong>Indicators</strong></a></li>
+
+
+                        </ul>
+                        <div class="tab-content">
+                            <div id="tab1" class="tab-pane in active" role="tabpanel">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <section class="features14 cid-sz7JYbtQAC" id="features15-r">
+
+
+
+                                            <div class="container">
+                                                <div class="row justify-content-center">
+                                                    <div class="card col-12 col-md-6 col-lg-3">
+                                                        <div class="card-wrapper">
+
+                                                            <div class="card-box">
+                                                                <h5 class="card-title mbr-fonts-style mb-2 display-7">
+                                                                    <p><strong>Open</strong></p>
+                                                                </h5>
+                                                                <h5 class="card-text mbr-fonts-style display-4"
+                                                                    id="data-open">145.00
+                                                                </h5>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="card col-12 col-md-6 col-lg-3">
+                                                        <div class="card-wrapper">
+
+                                                            <div class="card-box">
+                                                                <h5 class="card-title mbr-fonts-style mb-2 display-7">
+                                                                    <p><strong>Previous Close</strong></p>
+                                                                </h5>
+                                                                <h5 class="card-text mbr-fonts-style display-4"
+                                                                    id="data-previousclose">128.80</h5>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="card col-12 col-md-6 col-lg-3">
+                                                        <div class="card-wrapper">
+
+                                                            <div class="card-box">
+                                                                <h5 class="card-title mbr-fonts-style mb-2 display-7">
+                                                                    <p>
+                                                                        <strong>High</strong>
+                                                                    </p>
+                                                                </h5>
+                                                                <h5 class="card-text mbr-fonts-style display-4"
+                                                                    id="data-high">65.84</h5>
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+                                                    <div class="card col-12 col-md-6 col-lg-3">
+                                                        <div class="card-wrapper">
+
+                                                            <div class="card-box">
+                                                                <h5 class="card-title mbr-fonts-style mb-2 display-7">
+                                                                    <p><strong>Low</strong></p>
+                                                                </h5>
+                                                                <h5 class="card-text mbr-fonts-style display-4"
+                                                                    id="data-low">65.50</h5>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </section>
+
+                                        <section class="features14 cid-sz7JYc5pkJ" id="features15-s">
+
+
+
+                                            <div class="container">
+                                                <div class="row justify-content-center">
+                                                    <div class="card col-12 col-md-6 col-lg-3">
+                                                        <div class="card-wrapper">
+
+                                                            <div class="card-box">
+                                                                <h5 class="card-title mbr-fonts-style mb-2 display-7">
+                                                                    <p>
+                                                                        <a href="https://www.investopedia.com/terms/m/marketcapitalization.asp"
+                                                                            target="_blank" class="text-primary">
+                                                                            <strong>Market Capital</strong>
+                                                                        </a>
+                                                                    </p>
+                                                                </h5>
+                                                                <h5 class="card-text mbr-fonts-style display-4"
+                                                                    id="data-marketcapitalization">653.50
+                                                                </h5>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="card col-12 col-md-6 col-lg-3">
+                                                        <div class="card-wrapper">
+
+                                                            <div class="card-box">
+                                                                <h5 class="card-title mbr-fonts-style mb-2 display-7">
+                                                                    <p><a href="https://www.investopedia.com/terms/e/eps.asp"
+                                                                            target="_blank"
+                                                                            class="text-primary"><strong>EPS</strong></a>
+                                                                    </p>
+                                                                </h5>
+                                                                <h5 class="card-text mbr-fonts-style display-4"
+                                                                    id="data-eps">653.50</h5>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="card col-12 col-md-6 col-lg-3">
+                                                        <div class="card-wrapper">
+
+                                                            <div class="card-box">
+                                                                <h5 class="card-title mbr-fonts-style mb-2 display-7">
+                                                                    <p>
+                                                                        <strong>52 Week High</strong>
+                                                                    </p>
+                                                                </h5>
+                                                                <h5 class="card-text mbr-fonts-style display-4"
+                                                                    id="data-fiftytwoweekhigh">653.50</h5>
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+                                                    <div class="card col-12 col-md-6 col-lg-3">
+                                                        <div class="card-wrapper">
+
+                                                            <div class="card-box">
+                                                                <h5 class="card-title mbr-fonts-style mb-2 display-7">
+                                                                    <p><strong>52 Week Low</strong></p>
+                                                                </h5>
+                                                                <h5 class="card-text mbr-fonts-style display-4"
+                                                                    id="data-fiftytwoweeklow">653.50</h5>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </section>
+                                        <section class="features14 cid-sz7JYcBJ0V" id="features15-t">
+                                            <div class="container">
+                                                <div class="row justify-content-center">
+                                                    <div class="card col-12 col-md-6 col-lg-3">
+                                                        <div class="card-wrapper">
+
+                                                            <div class="card-box">
+                                                                <h5 class="card-title mbr-fonts-style mb-2 display-7">
+                                                                    <p><strong>Country</strong></p>
+                                                                </h5>
+                                                                <h5 class="card-text mbr-fonts-style display-4"
+                                                                    id="data-country">US</h5>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="card col-12 col-md-6 col-lg-3">
+                                                        <div class="card-wrapper">
+
+                                                            <div class="card-box">
+                                                                <h5 class="card-title mbr-fonts-style mb-2 display-7">
+                                                                    <p><strong>Exchange</strong>
+                                                                    </p>
+                                                                </h5>
+                                                                <h5 class="card-text mbr-fonts-style display-4"
+                                                                    id="data-exchange">Nasdaq</h5>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="card col-12 col-md-6 col-lg-3">
+                                                        <div class="card-wrapper">
+
+                                                            <div class="card-box">
+                                                                <h5 class="card-title mbr-fonts-style mb-2 display-7">
+                                                                    <p><strong>Type</strong></p>
+                                                                </h5>
+                                                                <h5 class="card-text mbr-fonts-style display-4"
+                                                                    id="data-type">
+                                                                    ETF</h5>
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+                                                    <div class="card col-12 col-md-6 col-lg-3">
+                                                        <div class="card-wrapper">
+
+                                                            <div class="card-box">
+                                                                <h5 class="card-title mbr-fonts-style mb-2 display-7">
+                                                                    <p><a href="https://www.investopedia.com/terms/d/dividend-per-share.asp"
+                                                                            target="_blank"
+                                                                            class="text-primary"><strong>Dividend Per
+                                                                                Share</strong></a>
+                                                                    </p>
+                                                                </h5>
+                                                                <h5 class="card-text mbr-fonts-style display-4"
+                                                                    id="data-dividendpershare">
+                                                                    0.82</h5>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </section>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="tab2" class="tab-pane" role="tabpanel">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <section class="features10 cid-sAQin9BOqz" id="features11-x">
+                                            <!---->
+                                            <div class="container news-container">
+                                                <div class="card news-card">
+                                                    <div class="card-wrapper">
+                                                        <div class="row align-items-center">
+                                                            <div class="col-12 col-md-2">
+                                                                <div class="image-wrapper">
+                                                                    <a class="news-title-url" href="index.html"
+                                                                        target="_blank"><img class="news-thumbnail"
+                                                                            src="assets/images/missing-thumbnail.jpg"
+                                                                            alt="stocks" title=""></a>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-12 col-md">
+                                                                <div class="card-box">
+                                                                    <div class="row">
+                                                                        <div class="col-12">
+                                                                            <div class="top-line">
+                                                                                <h5
+                                                                                    class="card-title mbr-fonts-style display-7">
+                                                                                    <a href="index.html"
+                                                                                        class="text-primary news-thumbnail-url"
+                                                                                        target="_blank"><strong
+                                                                                            class="news-title"></strong></a>
+                                                                                </h5>
+                                                                                <p
+                                                                                    class="cost mbr-fonts-style display-7">
+                                                                                </p>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-12">
+                                                                            <div class="bottom-line">
+                                                                                <p
+                                                                                    class="mbr-text mbr-fonts-style m-0 display-7 news-provider">
+                                                                                </p>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </section>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="tab3" class="tab-pane" role="tabpanel">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <p class="mbr-text mbr-fonts-style display-7">
+                                            Comming Soon!!
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="tab4" class="tab-pane" role="tabpanel">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <p class="mbr-text mbr-fonts-style display-7">
+                                            Comming Soon!!</p>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <section class="content5 cid-sz7JYdf1oU">
+
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-12 col-lg-10">
+
+                    <h4 class="mbr-section-subtitle mbr-fonts-style mb-4 display-5"></h4>
+                    <p class="mbr-text mbr-fonts-style display-7"></p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="content5 cid-sz7JYdf1oU" id="extra-space">
+
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-12 col-lg-10">
+
+                    <h4 class="mbr-section-subtitle mbr-fonts-style mb-4 display-5"></h4>
+                    <p class="mbr-text mbr-fonts-style display-7"></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="footer7 cid-sz7JYdEIJg" once="footers" id="footer7-v">
+
+
+
+
+
+        <div class="container">
+            <div class="media-container-row align-center mbr-white">
+                <div class="col-12">
+                    <p class="mbr-text mb-0 mbr-fonts-style display-7">
+                        © Copyright 2021 CodeofEverything - All Rights Reserved
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <a href="https://mobirise.site/g"></a>
+
+    </section>
+    <script src="assets/web/assets/jquery/jquery.min.js"></script>
+    <script src="assets/popper/popper.min.js"></script>
+    <script src="assets/tether/tether.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5"></script>
+    <script src="https://apis.google.com/js/plusone.js"></script>
+    <script src="assets/facebook-plugin/facebook-script.js"></script>
+    <script src="assets/smoothscroll/smooth-scroll.js"></script>
+    <script src="assets/dropdown/js/nav-dropdown.js"></script>
+    <script src="assets/dropdown/js/navbar-dropdown.js"></script>
+    <script src="assets/touchswipe/jquery.touch-swipe.min.js"></script>
+    <script src="assets/theme/js/script.js"></script>
+    <script src="assets/scripts/constants.js"></script>
+    <script src="assets/scripts/javascript.js"></script>
+    <script src="assets/scripts/services/news.js"></script>
+    <script src="assets/mbr-tabs/mbr-tabs.js"></script>
+
+    <div id="scrollToTop" class="scrollToTop mbr-arrow-up"><a style="text-align: center;"><i
+                class="mbr-arrow-up-icon mbr-arrow-up-icon-cm cm-icon cm-icon-smallarrow-up"></i></a></div>
+
+</body>
+
+</html>
