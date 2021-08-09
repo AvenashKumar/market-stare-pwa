@@ -1,5 +1,5 @@
 //const g_host = "http://localhost:8081";
-const g_host = "https://gateway-marketstare-lnh3luj.uc.gateway.dev";
+const g_host = "https://gateway-marketstare-lnh3luj.uc.gateway.dev/backend-marketstare-search";
 
 const g_apiOverview = "/api/v1/overview/find/symbol/";
 
