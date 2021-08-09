@@ -28,6 +28,8 @@
     </noscript>
     <link rel="preload" as="style" href="assets/mobirise/css/mbr-additional.css">
     <link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript" src="assets/scripts/javascript.js"></script>
 
 </head>
 
@@ -130,8 +132,8 @@
                                     tab-purpose="news"><strong>News</strong></a>
                             </li>
                             <li class="nav-item"><a class="nav-link mbr-fonts-style active display-7" role="tab"
-                                    data-toggle="tab" href="#tabs1-w_tab2"
-                                    aria-selected="true"><strong>Social</strong></a>
+                                    data-toggle="tab" href="#tabs1-w_tab2" aria-selected="true" 
+                                    tab-purpose="social"><strong>Social</strong></a>
                             </li>
                             <li class="nav-item"><a class="nav-link mbr-fonts-style active display-7" role="tab"
                                     data-toggle="tab" href="#tabs1-w_tab3"
@@ -394,9 +396,22 @@
                             <div id="tab3" class="tab-pane" role="tabpanel">
                                 <div class="row">
                                     <div class="col-md-12">
-                                        <p class="mbr-text mbr-fonts-style display-7">
-                                            Comming Soon!!
-                                        </p>
+                                        <section id="features11-y">
+                                            <!---->
+                                            <div class="container social-container">
+                                                <div class="card social-card">
+                                                    <div class="card-wrapper">
+                                                        <div class="row align-items-center">
+                                                            <div class="col-12 col-md-2">
+                                                                <div id="piechart"
+                                                                    style="width: 900px; height: 1000px;">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </section>
                                     </div>
                                 </div>
                             </div>
@@ -474,8 +489,8 @@
     <script src="assets/touchswipe/jquery.touch-swipe.min.js"></script>
     <script src="assets/theme/js/script.js"></script>
     <script src="assets/scripts/constants.js"></script>
-    <script src="assets/scripts/javascript.js"></script>
     <script src="assets/scripts/services/news.js"></script>
+    <script src="assets/scripts/services/social.js"></script>
     <script src="assets/mbr-tabs/mbr-tabs.js"></script>
 
     <div id="scrollToTop" class="scrollToTop mbr-arrow-up"><a style="text-align: center;"><i

@@ -15,3 +15,14 @@ gs_news = {
     news: "news",
   },
 };
+
+gs_social = {
+  //host: "http://localhost:8082",
+  host: "https://backend-news-api-co4tcjxfmq-uc.a.run.app",
+  newsList: {
+    path: "/api/v1/list/news"
+  },
+  tabs: {
+    social: "social",
+  },
+};
