@@ -8,21 +8,20 @@ function fetchNews(countryCode, ticker) {
   reqBody.totalItems = gs_news.newsList.totalItemsSingleRTT;
   reqBody.ticker = ticker;
 
-  const newsEndpoint = gs_news.host + gs_news.newsList.path;
+  const newsEndpoint = gs_news.host + 
+                      gs_news.newsList.path.replace("{countryCode}", reqBody.countryCode).replace("{ticker}", reqBody.ticker).replace("{totalItems}", reqBody.totalItems) + 
+                      "?key=" + gs_news.apiKey;
   callNewsAPI(newsEndpoint, JSON.stringify(reqBody));
 
   return false;
 }
 
-function callNewsAPI(apiEndpoint, body) {
+function callNewsAPI(apiEndpoint) {
   // Set up the request
   const xhr = new XMLHttpRequest();
 
   // Open the connection
-  xhr.open("POST", apiEndpoint, true);
-
-  //Send the proper header information along with the request
-  xhr.setRequestHeader("Content-Type", "application/json");
+  xhr.open("GET", apiEndpoint, true);
 
   xhr.onerror = function () {};
 
@@ -35,7 +34,7 @@ function callNewsAPI(apiEndpoint, body) {
   };
 
   // Send the data.
-  xhr.send(body);
+  xhr.send();
 }
 
 function populateNews(news) {
@@ -64,7 +63,7 @@ function populateNews(news) {
       "/" +
       news[i].region +
       "/" +
-      news[i].newsUuid;
+      news[i].newsUuid + "?key=" + gs_news.apiKey;
 
     $(".news-title-url").last().attr("href", newsDetailsLink);
     $(".news-thumbnail-url").last().attr("href", newsDetailsLink);
