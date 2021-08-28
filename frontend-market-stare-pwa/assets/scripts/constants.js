@@ -10,9 +10,13 @@ gs_news = {
     path: "/api/v1/news/details",
     totalItemsSingleRTT: 100,
   },
+  analysis: {
+    path: "/api/v1/analysis/region/{region}/ticker/{ticker}",
+  },
   defaultThubnailImg: "assets/images/missing-thumbnail.jpg",
   tabs: {
     finance: "finance",
     news: "news",
+    social: "social",
   },
 };

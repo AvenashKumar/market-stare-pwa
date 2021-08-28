@@ -11,7 +11,7 @@ function fetchNews(countryCode, ticker) {
   const newsEndpoint = gs_news.host + 
                       gs_news.newsList.path.replace("{countryCode}", reqBody.countryCode).replace("{ticker}", reqBody.ticker).replace("{totalItems}", reqBody.totalItems) + 
                       "?key=" + gs_news.apiKey;
-  callNewsAPI(newsEndpoint, JSON.stringify(reqBody));
+  callNewsAPI(newsEndpoint);
 
   return false;
 }
